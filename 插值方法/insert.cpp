@@ -59,6 +59,7 @@ void getcha_table(double * x, double *y, double table[20][20] ,int num)
 		}
 	}
 }
+//牛顿插值基函数
 double SumX_Y(double source ,double *x,int count)
 {
 	double mul =1 ;
@@ -159,7 +160,7 @@ void Min_Double()
 	a = Y_ - X_ * b;
 	cout << "a=" << a << endl;
 	cout << "b=" << b << endl;
-	cout << "拟合的曲线是" << a;
+	cout << "拟合的曲线是 y=" << a;
 	if (b > 0)
 		cout << "+";
 	cout<< b << "X" << endl;
